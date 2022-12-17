@@ -9,7 +9,11 @@ html{
 
 body{
     height: 100%;
-    font-family: sans-serif;
+    font-family: "outfit",sans-serif;
+}
+
+main{
+    height: 100%;
 }
 
 .hero__container{
@@ -51,10 +55,10 @@ body{
 .hero__title{
     color: #fff;
     font-weight: bold;
+    padding-top: 30px;
 }
 
-.hero__title:hover,
-.hero__title:active {
+.hero__title:hover{
     color: #00fff7;
     cursor: pointer;
 }
@@ -68,7 +72,7 @@ hr{
     border: 1px solid #2f415b;
 }
 
-.hero__price{
+.hero__price__info{
     width: 100%;
     font-weight: bold;
     color: #00fff7;
@@ -79,28 +83,35 @@ hr{
     line-height: 100%;
 }
 
-.hero__price img{
-    height: 20px;
+.hero__price{
+    display: flex;
+    align-content: center;
+}
+
+.hero__price > img{ 
     width: 20px;
     padding-right: 10px;
 }
 
-.hero__price--daysleft{
+.hero__daysleft{
+    display: flex;
+    align-items: center;
     color: #8bacda;
 }
 
-.hero__price--daysleft > img{
-    width: 30px;
-    height: 20px;
+.hero__daysleft > img{
+    width: 25px;
+    padding-right: 5px;
 }
 
 .hero__creator{
+    display: flex;
+    align-items: center;
     color: #8bacda;
 }
 
-.hero__creator img{
-    width: 25px;
-    height: 25px;
+.hero__creator > img{
+    width: 25px;        
     border: 1px solid #fff;
     border-radius: 50%;
     margin-right: 10px;
@@ -110,8 +121,7 @@ span{
     color: #fff;
 }
 
-span:hover,
-span:active {
+span:hover {
     color: #00fff7;
     cursor: pointer;
 }
