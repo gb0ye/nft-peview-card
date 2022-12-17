@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.hero__container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d192b;
+}  
+
+.hero{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #14253d;
+    padding: 20px;
+}
+
+.hero__item{
+    padding: 10px 0;
+}
+
+.hero__img{
+    background-image:url("./images/image-equilibrium.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.hero__img:hover,
+.hero__img:active {
+    background-image: url("./images/icon-view.svg"),linear-gradient(rgba(0, 255, 247, 0.5) ,rgba(0, 225, 247, 0.5)),url("./images/image-equilibrium.jpg"); 
+    background-size: 50px, cover, cover; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.hero__title{
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero__title:hover,
+.hero__title:active {
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.hero__description{
+    color: #8bacda;
+    font-size: 15px;
+}
+
+hr{
+    border: 1px solid #2f415b;
+}
+
+.hero__price{
+    width: 100%;
+    font-weight: bold;
+    color: #00fff7;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    line-height: 100%;
+}
+
+.hero__price img{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.hero__price--daysleft{
+    color: #8bacda;
+}
+
+.hero__price--daysleft > img{
+    width: 30px;
+    height: 20px;
+}
+
+.hero__creator{
+    color: #8bacda;
+}
+
+.hero__creator img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+span{
+    color: #fff;
+}
+
+span:hover,
+span:active {
+    color: #00fff7;
+    cursor: pointer;
+}
+
