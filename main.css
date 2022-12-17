@@ -41,8 +41,7 @@ body{
     border-radius: 7px;
 }
 
-.hero__img:hover,
-.hero__img:active {
+.hero__img:hover {
     background-image: url("./images/icon-view.svg"),linear-gradient(rgba(0, 255, 247, 0.5) ,rgba(0, 225, 247, 0.5)),url("./images/image-equilibrium.jpg"); 
     background-size: 50px, cover, cover; 
     background-repeat: no-repeat;
